@@ -40,7 +40,7 @@ def display_number(n):
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
-def display_number_template(n):
+def display_number_template(n=None):
     """Displays HTML page with  H1 tag containing 'Number: n' if n is an int"""
     return render_template('5-number.html', n=n)
 
